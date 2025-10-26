@@ -1,0 +1,168 @@
+:root {
+  --color-background: #eaecf0;
+  --color-text-main: #354153;
+  --color-text-second: #667085;
+  --color-button-bcgr-active: #0d1421;
+
+  --font-family-base: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 100px;
+  
+  margin-bottom: 20px;
+
+  border: 1px solid var(--color-background);
+  
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-button-bcgr-active);
+  margin: 0 10px;
+}
+
+.brand h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--color-text-main);
+  margin: 0 10px;
+}
+
+.user-btn {
+  padding: 10px;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.main-h-points svg {
+  width: 10px;
+  height: 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.main-h-points button {
+  border-radius: 8px;
+  background-color: var(--color-button-bcgr-active);
+  color: white;
+
+  padding: 10px 16px;
+  gap: 8px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main-h-points button:last-child {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  border: 1px solid var(--color-background);
+}
+
+.main-h-sort button {
+  border-radius: 8px;
+  border: 1px solid var(--color-background);
+  padding: 8px 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-main);
+}
+
+.main-h-sort svg {
+  margin: 2px 10px;
+}
+
+.main-container {
+  flex-grow: 1;
+  padding: 24px;
+  overflow-y: auto;
+
+  margin: 0 80px;
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card{
+    margin: 10px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-second);
+}
+
+.card-content h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--color-button-bcgr-active);
+
+    margin: 20px 0;
+}
+
+.card-content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-text-main);
+}
+
+.site-footer{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-text-second);
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
